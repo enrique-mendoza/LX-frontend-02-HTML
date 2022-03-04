@@ -1,7 +1,7 @@
 <h1 align="center"> Launch X - FrontEnd Mission 🛰️ </h1>
 
 <h2 align="center">
-    Introduction to HTML.
+    Introduction to HTML
 </h2>
 
 ## Practices
@@ -43,3 +43,18 @@ I'm going to work with following case:
     </tr>
   </tbody>
 </table>
+
+## Credits:
+
+Credits to Juan Rodrigo Martínez Plascencia - Web developer and cibersecurity specialist.
+
+Follow him on:
+
+- GitHub: romarpla
+- Instagram: romarpla
+
+And Luis Enrique Mendoza Higuera - Entry-level Software Engineer.
+
+Follow him on:
+
+- Github: enrique-mendoza
