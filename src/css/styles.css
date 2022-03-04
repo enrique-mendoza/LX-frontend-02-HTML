@@ -5,6 +5,11 @@
   --pink: hsl(339, 70%, 94%);
   --brown: hsl(357, 42%, 43%);
   --shadow: hsl(0, 0%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --AltWhite: hsl(0, 0%, 95%);
+  --black: hsl(0, 0%, 0%);
+  --AltBlack: hsla(0, 0%, 0%, 0.5);
+  --grey: hsl(0, 0%, 88%);
 }
 
 html {
@@ -88,6 +93,11 @@ h4 {
   text-transform: uppercase;
 }
 
+.align {
+  display: flex;
+  justify-content: end;
+}
+
 /* Header */
 .header {
   background-image: url('../assets/images/bg1.png');
@@ -95,7 +105,6 @@ h4 {
 
 /* Navigation */
 .nav {
-  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -116,6 +125,7 @@ h4 {
   color: var(--pink);
   cursor: pointer;
   font-size: 2.5rem;
+  text-align: center;
   position: relative;
 }
 
@@ -190,8 +200,13 @@ h4 {
 
 @media (min-width: 580px) {
   .grid-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 940px) {
+  .grid-items {
     grid-template-columns: repeat(4, 1fr);
-    justify-content: start;
   }
 }
 
@@ -201,18 +216,37 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 5px 5px 5px var(--shadow);
+  backface-visibility: hidden;
   height: 30rem;
   position: relative;
+  transition: 0.5s ease;
   width: 40rem;
 }
 
-.price {
-  background-color: var(--pink);
-  border-radius: 10%;
-  color: var(--brown);
-  font-size: 3rem;
-  margin-left: 0.5rem;
-  padding: 0.5rem;
+/* credits: https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: var(--black);
+  background: var(--AltBlack); /* Black see-through */
+  color: var(--AltWhite);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.price,
+.availables,
+.order {
+  font-size: 2rem;
 }
 
 .cake1 {
@@ -231,6 +265,22 @@ h4 {
   background-image: url('../assets/images/cake4.jpg');
 }
 
+.cake5 {
+  background-image: url('../assets/images/cake5.jpg');
+}
+
+.cake6 {
+  background-image: url('../assets/images/cake6.jpg');
+}
+
+.cake7 {
+  background-image: url('../assets/images/cake7.jpg');
+}
+
+.cake8 {
+  background-image: url('../assets/images/cake8.jpg');
+}
+
 .garnish1 {
   background-image: url('../assets/images/gar1.jpg');
 }
@@ -245,6 +295,22 @@ h4 {
 
 .garnish4 {
   background-image: url('../assets/images/gar3.jpg');
+}
+
+.garnish5 {
+  background-image: url('../assets/images/gar5.jpg');
+}
+
+.garnish6 {
+  background-image: url('../assets/images/gar6.jpg');
+}
+
+.garnish7 {
+  background-image: url('../assets/images/gar7.jpg');
+}
+
+.garnish8 {
+  background-image: url('../assets/images/gar8.jpg');
 }
 
 .colors {
@@ -268,7 +334,7 @@ h4 {
   justify-content: center;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 940px) {
   .grid-rates {
     grid-template-columns: repeat(3, 0fr);
   }
@@ -292,6 +358,90 @@ h4 {
   background-size: cover;
   border-radius: 0.5%;
   width: 100%;
+}
+
+/* About */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .info {
+    width: 50%;
+  }
+  .two-columns {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  border-radius: 0.5%;
+  max-width: 100%;
+}
+
+.description {
+  font-size: 2rem;
+}
+
+.text-info {
+  background-color: var(--brown);
+  border-radius: 2%;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.text-number {
+  font-size: 2.5rem;
+}
+
+.grid-info {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+/* Form */
+.field {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.field__label {
+  flex: 0 0 13rem;
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.field__field,
+.field__field--textarea {
+  outline: 1px solid var(--brown);
+}
+
+.field__field {
+  border: 1px solid var(--grey);
+  flex: 1;
+}
+
+.field__field--textarea {
+  height: 20rem;
+}
+
+.btn {
+  background-color: var(--brown);
+  border: none;
+  border-radius: 3%;
+  color: var(--pink);
+  cursor: pointer;
+  display: block;
+  font-family: var(--fontPage);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  text-align: center;
 }
 
 /* Footer */

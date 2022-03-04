@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mendoza Bakery</title>
+    <!-- Normalize -->
+    <link rel="preload" href="../css/normalize.css" as="style" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="preload" href="../css/styles.css" as="style" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/fav.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header background">
+      <nav class="nav">
+        <a href="/index.html" class="nav__link nav--underline">home</a>
+        <a href="../pages/menu.html" class="nav__link nav--underline menu">menu</a>
+        <a href="../pages/about.html" class="nav__link nav--underline about">about us</a>
+        <a href="../pages/form.html" class="nav__link nav--bg form">order online</a>
+      </nav>
+
+      <div class="title">
+        <h1 class="title__name first-uppercase">mendoza</h1>
+        <h2 class="title__bakery first-uppercase">bakery</h2>
+        <img src="../assets/images/thumbnail.png" alt="titleImg" class="title__img" />
+        <h3 class="title__phrase uppercase">traditional pastries</h3>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Menu -->
+      <section class="container">
+        <h2 class="category first-uppercase">select your desserts</h2>
+
+        <div class="grid-items">
+          <a href="./form.html" class="item cake1">
+            <div class="overlay">
+              <p class="price">$100</p>
+              <p class="availables">9 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake2">
+            <div class="overlay">
+              <p class="price">$200</p>
+              <p class="availables">9 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake3">
+            <div class="overlay">
+              <p class="price">$300</p>
+              <p class="availables">30 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake4">
+            <div class="overlay">
+              <p class="price">$400</p>
+              <p class="availables">10 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake5">
+            <div class="overlay">
+              <p class="price">$400</p>
+              <p class="availables">1 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake6">
+            <div class="overlay">
+              <p class="price">$300</p>
+              <p class="availables">3 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake7">
+            <div class="overlay">
+              <p class="price">$200</p>
+              <p class="availables">5 availables</p>
+            </div>
+          </a>
+          <a href="./form.html" class="item cake8">
+            <div class="overlay">
+              <p class="price">$100</p>
+              <p class="availables">39 availables</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 class="category first-uppercase">select your garnish</h2>
+
+        <div class="grid-items">
+          <a href="./form.html" class="item garnish1">
+            <div class="overlay">
+              <p class="price">$100</p>
+              <p class="availables">13 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish2">
+            <div class="overlay">
+              <p class="price">$200</p>
+              <p class="availables">2 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish3">
+            <div class="overlay">
+              <p class="price">$300</p>
+              <p class="availables">10 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish4">
+            <div class="overlay">
+              <p class="price">$400</p>
+              <p class="availables">11 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish5">
+            <div class="overlay">
+              <p class="price">$100</p>
+              <p class="availables">11 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish6">
+            <div class="overlay">
+              <p class="price">$200</p>
+              <p class="availables">1 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish7">
+            <div class="overlay">
+              <p class="price">$300</p>
+              <p class="availables">7 availables</p>
+            </div>
+          </a>
+
+          <a href="./form.html" class="item garnish8">
+            <div class="overlay">
+              <p class="price">$400</p>
+              <p class="availables">19 availables</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <form class="container">
+        <div class="field">
+          <label for="name" class="field__label first-uppercase">name</label>
+          <input type="text" placeholder="name" id="name" class="field__field" />
+        </div>
+
+        <div class="field">
+          <label for="phone" class="field__label first-uppercase">telephone</label>
+          <input type="tel" placeholder="phone" id="phone" class="field__field" />
+        </div>
+
+        <div class="field">
+          <label for="email" class="field__label first-uppercase">e-mail</label>
+          <input type="email" placeholder="e-mail" id="email" class="field__field" />
+        </div>
+
+        <div class="field">
+          <label for="comments" class="field__label first-uppercase">additional comments</label>
+          <textarea id="comments" class="field__field field__field--textarea"></textarea>
+        </div>
+
+        <div class="field align">
+          <input type="submit" value="send" class="btn uppercase" />
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Website by Luis Enrique Mendoza Higuera</p>
+    </footer>
+  </body>
+</html>
