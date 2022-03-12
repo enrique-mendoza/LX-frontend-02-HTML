@@ -6,6 +6,8 @@
 
 ## Practices
 
+Check out the [live website](https://enrique-mendoza.github.io/launchX-FrontEnd-Mission-02-HTML/) in their respective links. 👀
+
 1. Create a brand for the bakery such as a logo and the messages.
 2. Customer page layout.
 3. Baker page layout.
